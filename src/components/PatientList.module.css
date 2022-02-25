@@ -1,0 +1,90 @@
+.list {
+  border: solid #ddd;
+  border-width: 0 0 1px 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.headerRow,
+.row {
+  display: flex;
+  border: solid #ddd;
+  border-width: 1px 1px 0 1px;
+  background: #fff;
+}
+.headerRow {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+}
+.row {
+  min-height: 120px;
+  background: #fff;
+}
+.row:nth-child(2n) {
+  background: rgb(247, 247, 245);
+}
+.columnLeft {
+  flex: 1 0 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.columnRight {
+  flex: 0 0 240px;
+  padding: 12px;
+  border: solid #ddd;
+  border-width: 0 0 0 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.patientHeader {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.patientSubheader {
+  font-size: 14px;
+  padding: 4px 0;
+}
+.patientContact {
+  font-size: 14px;
+  color: #2c938c;
+  font-weight: 500;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.topButton,
+.bottomButton {
+  border: 2px solid;
+  padding: 9px 8px 7px;
+  border-radius: 9999px;
+  min-width: 160px;
+  text-align: center;
+  border-color: currentColor;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+.topButton {
+  color: #2c938c;
+}
+.bottomButton {
+  color: #666;
+}
+.topButton:hover,
+.topButton:focus,
+.topButton:active {
+  background: #2c938c;
+  border-color: #2c938c;
+  color: #fff;
+}
+.bottomButton:hover,
+.bottomButton:focus,
+.bottomButton:active {
+  background: #666;
+  border-color: #666;
+  color: #fff;
+}
